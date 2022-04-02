@@ -26,7 +26,7 @@ abbreviator.abbreviate();
 Abbreviate address
 
 ```java
-@Abbreviate(capitalize = false, usePeriod = true)
+@AbbreviateAddress(capitalize = false, usePeriod = true)
 ```
 
 Required
