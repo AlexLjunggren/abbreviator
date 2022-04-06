@@ -5,6 +5,8 @@ import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
+import io.ljunggren.abbreviator.manipulation.Replacement;
+
 public class AddressManipulationTest {
     
     private void test(String string, String abbreviation) {
@@ -18,10 +20,19 @@ public class AddressManipulationTest {
     }
     
     @Test
-    public void longStringTest() {
-        String string = "  1 Main     Street  ";
-        String expected = "  1 Main     St  ";
-        assertEquals(expected, new AddressManipulation(false, false, false).manipulate(string));
+    public void aggressiveRegexTest() {
+        String string = "avenueavenue";
+        Replacement replacement = AddressReplacement.AVENUE;
+        String replaced = string.replaceAll(replacement.getAggressiveRegex(), replacement.getAbbreviation());
+        assertEquals("AveAve", replaced);
+    }
+
+    @Test
+    public void passiveRegexTest() {
+        String string = "avenueavenue";
+        Replacement replacement = AddressReplacement.AVENUE;
+        String replaced = string.replaceAll(replacement.getPassiveRegex(), replacement.getAbbreviation());
+        assertEquals(string, replaced);
     }
 
     @Test

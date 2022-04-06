@@ -41,6 +41,20 @@ Optional
 Data types supported
 - String
 
+## Canadian Province ##
+
+Abbreviate states
+
+```java
+@AbbreviateCanadianProvince
+```
+
+Optional
+- aggressive - Default is false
+
+Data types supported
+- String
+
 ## State ##
 
 Abbreviate states

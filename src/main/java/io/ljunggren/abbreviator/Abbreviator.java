@@ -9,6 +9,7 @@ import java.util.List;
 import org.apache.commons.lang3.reflect.FieldUtils;
 
 import io.ljunggren.abbreviator.abbreviation.AddressAbbreviation;
+import io.ljunggren.abbreviator.abbreviation.CanadianProvinceAbbreviation;
 import io.ljunggren.abbreviator.abbreviation.CatchAllAbbreviation;
 import io.ljunggren.abbreviator.abbreviation.StateAbbreviation;
 import lombok.Getter;
@@ -61,9 +62,10 @@ public class Abbreviator {
     
     private void abbreviateChain(Annotation annotation, Item item) {
         new AddressAbbreviation().nextChain(
+                new CanadianProvinceAbbreviation().nextChain(
                 new StateAbbreviation().nextChain(
                 new CatchAllAbbreviation()
-                        )).abbreviate(annotation, item);
+                        ))).abbreviate(annotation, item);
     }
     
 }

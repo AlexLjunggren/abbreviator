@@ -65,8 +65,13 @@ public enum StateReplacement implements Replacement {
     }
     
     @Override
-    public String getRegex() {
+    public String getAggressiveRegex() {
         return "(?i)" + this.string;
+    }
+    
+    @Override
+    public String getPassiveRegex() {
+        return "(?<![a-zA-Z])(?i)" + this.string + "(?![a-zA-Z])";
     }
     
     @Override

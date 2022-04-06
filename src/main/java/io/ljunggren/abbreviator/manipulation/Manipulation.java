@@ -21,24 +21,10 @@ public abstract class Manipulation<T> {
         if (StringUtils.isEmpty(value)) {
             return value;
         }
-        return aggressive ? aggressiveManipulate(value, replacements) : passiveManipulate(value, replacements);
-    }
-    
-    private String aggressiveManipulate(String value, Replacement[] replacements) {
         for (Replacement replacement: replacements) {
-            value = value.replaceAll(replacement.getRegex(), getAbbreviation(replacement));
-        }
-        return value;
-    }
-    
-    private String passiveManipulate(String value, Replacement[] replacements) {
-        String[] splits = value.split("[^a-zA-Z]+");
-        for (String split: splits) {
-            for (Replacement replacement: replacements) {
-                if (split.matches(replacement.getRegex())) {
-                    value = value.replaceFirst(replacement.getRegex(), getAbbreviation(replacement));
-                }
-            }
+            value = value.replaceAll(
+                    aggressive ? replacement.getAggressiveRegex() : replacement.getPassiveRegex(),
+                    getAbbreviation(replacement));
         }
         return value;
     }
