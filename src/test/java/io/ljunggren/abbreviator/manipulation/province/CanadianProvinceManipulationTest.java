@@ -47,6 +47,46 @@ public class CanadianProvinceManipulationTest {
     public void manitobaTest() {
         test("Manitoba", "MB");
     }
+    @Test
+    public void newBrunswickTest() {
+        test("New Brunswick", "NB");
+    }
+    @Test
+    public void newfoundlandAndLabradorTest() {
+        test("Newfoundland and Labrador", "NL");
+    }
+    @Test
+    public void northWestTerritoriesTest() {
+        test("NorthWest Territories", "NT");
+    }
+    @Test
+    public void novaScotiaTest() {
+        test("Nova Scotia", "NS");
+    }
+    @Test
+    public void nunavutTest() {
+        test("Nunavut", "NU");
+    }
+    @Test
+    public void ontarioTest() {
+        test("Ontario", "ON");
+    }
+    @Test
+    public void princeEdwardIslandTest() {
+        test("Prince Edward Island", "PE");
+    }
+    @Test
+    public void quebecTest() {
+        test("Quebec", "QC");
+    }
+    @Test
+    public void saskatchewanTest() {
+        test("Saskatchewan", "SK");
+    }
+    @Test
+    public void yukonTest() {
+        test("Yukon", "YK");
+    }
 
     @Test
     public void emptyTest() {
