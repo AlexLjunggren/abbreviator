@@ -6,7 +6,6 @@ import static org.junit.Assert.assertNotNull;
 import org.junit.Test;
 
 import io.ljunggren.abbreviator.manipulation.Replacement;
-import io.ljunggren.abbreviator.manipulation.state.StateManipulation;
 
 public class CanadianProvinceManipulationTest {
     
@@ -90,13 +89,13 @@ public class CanadianProvinceManipulationTest {
 
     @Test
     public void emptyTest() {
-        assertEquals("", new StateManipulation(false, false, false).manipulate(""));
-        assertEquals(null, new StateManipulation(false, false, false).manipulate(null));
+        assertEquals("", new CanadianProvinceManipulation(false, false, false).manipulate(""));
+        assertEquals(null, new CanadianProvinceManipulation(false, false, false).manipulate(null));
     }
     
     @Test
     public void descriptionTest() {
-        assertNotNull(new StateManipulation(false, false, false).description());
+        assertNotNull(new CanadianProvinceManipulation(false, false, false).description());
     }
 
 }
