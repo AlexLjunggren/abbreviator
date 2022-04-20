@@ -16,7 +16,7 @@ public class StateManipulationTest {
         assertEquals(abbreviation.toUpperCase(), new StateManipulation(true, false, false).manipulate(string));
         assertEquals(abbreviation + ",", new StateManipulation(false, false, false).manipulate(string + ","));
         assertEquals(abbreviation + ",", new StateManipulation(false, false, true).manipulate(string + ","));
-        assertEquals(string + string, new StateManipulation(false, false, false).manipulate(string + string));
+        assertEquals(string + "filler", new StateManipulation(false, false, false).manipulate(string + "filler"));
     }
     
     @Test
@@ -149,6 +149,90 @@ public class StateManipulationTest {
     @Test
     public void nevadaTest() {
         test("Nevada", "NV");
+    }
+    @Test
+    public void newHampshireTest() {
+        test("New Hampshire", "NH");
+    }
+    @Test
+    public void newJerseyTest() {
+        test("New Jersey", "NJ");
+    }
+    @Test
+    public void newMexicoTest() {
+        test("New Mexico", "NM");
+    }
+    @Test
+    public void newYorkTest() {
+        test("New York", "NY");
+    }
+    @Test
+    public void northCarolinaTest() {
+        test("North Carolina", "NC");
+    }
+    @Test
+    public void northDakotaTest() {
+        test("North Dakota", "ND");
+    }
+    @Test
+    public void ohioTest() {
+        test("Ohio", "OH");
+    }
+    @Test
+    public void oklahomaTest() {
+        test("Oklahoma", "OK");
+    }
+    @Test
+    public void oregonTest() {
+        test("Oregon", "OR");
+    }
+    @Test
+    public void pennsylvainiaTest() {
+        test("Pennsylvania", "PA");
+    }
+    @Test
+    public void rhodeIslandTest() {
+        test("Rhode Island", "RI");
+    }
+    @Test
+    public void southDakotaTest() {
+        test("South Dakota", "SD");
+    }
+    @Test
+    public void tennesseeTest() {
+        test("Tennessee", "TN");
+    }
+    @Test
+    public void texasTest() {
+        test("Texas", "TX");
+    }
+    @Test
+    public void utahTest() {
+        test("Utah", "UT");
+    }
+    @Test
+    public void vermontTest() {
+        test("Vermont", "VT");
+    }
+    @Test
+    public void virginiaTest() {
+        test("Virginia", "VA");
+    }
+    @Test
+    public void washingtonTest() {
+        test("Washington", "WA");
+    }
+    @Test
+    public void wetVirginiaTest() {
+        test("West Virginia", "WV");
+    }
+    @Test
+    public void wisconsinTest() {
+        test("Wisconsin", "WI");
+    }
+    @Test
+    public void wyomingTest() {
+        test("Wyoming", "WY");
     }
     
     @Test

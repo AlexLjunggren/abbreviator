@@ -50,9 +50,9 @@ public enum StateReplacement implements Replacement {
     TEXAS("texas", "TX"),
     UTAH("utah", "UT"),
     VERMONT("vermont", "VT"),
+    WEST_VIRGINIA("west virginia", "WV"), // order matters here
     VIRGINIA("virginia", "VA"),
     WASHINGTON("washington", "WA"),
-    WEST_VIRGINIA("west virginia", "WV"),
     WISCONSIN("wisconsin", "WI"),
     WYOMING("wyoming", "WY");
     
