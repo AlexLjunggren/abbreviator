@@ -38,6 +38,118 @@ public class StateManipulationTest {
     public void alabamaTest() {
         test("Alabama", "AL");
     }
+    @Test
+    public void alaskaTest() {
+        test("Alaska", "AK");
+    }
+    @Test
+    public void arizonaTest() {
+        test("Arizona", "AZ");
+    }
+    @Test
+    public void arkansasTest() {
+        test("Arkansas", "AR");
+    }
+    @Test
+    public void californiaTest() {
+        test("California", "CA");
+    }
+    @Test
+    public void coloradoTest() {
+        test("Colorado", "CO");
+    }
+    @Test
+    public void connecticutTest() {
+        test("Connecticut", "CT");
+    }
+    @Test
+    public void delawareTest() {
+        test("Delaware", "DE");
+    }
+    @Test
+    public void districtOfColumbiaTest() {
+        test("District of Columbia", "DC");
+    }
+    @Test
+    public void floridaTest() {
+        test("Florida", "FL");
+    }
+    @Test
+    public void georgiaTest() {
+        test("Georgia", "GA");
+    }
+    @Test
+    public void hawaiiTest() {
+        test("Hawaii", "HI");
+    }
+    @Test
+    public void idahoTest() {
+        test("Idaho", "ID");
+    }
+    @Test
+    public void illinoisTest() {
+        test("Illinois", "IL");
+    }
+    @Test
+    public void idianaTest() {
+        test("Indiana", "IN");
+    }
+    @Test
+    public void iowaTest() {
+        test("Iowa", "IA");
+    }
+    @Test
+    public void kansasTest() {
+        test("Kansas", "KS");
+    }
+    @Test
+    public void kentukyTest() {
+        test("Kentucky", "KY");
+    }
+    @Test
+    public void louisianaTest() {
+        test("Louisiana", "LA");
+    }
+    @Test
+    public void maineTest() {
+        test("Maine", "ME");
+    }
+    @Test
+    public void marylandTest() {
+        test("Maryland", "MD");
+    }
+    @Test
+    public void massachusettsTest() {
+        test("Massachusetts", "MA");
+    }
+    @Test
+    public void michiganTest() {
+        test("Michigan", "MI");
+    }
+    @Test
+    public void minnesotaTest() {
+        test("Minnesota", "MN");
+    }
+    @Test
+    public void mississippiTest() {
+        test("Mississippi", "MS");
+    }
+    @Test
+    public void missouriTest() {
+        test("Missouri", "MO");
+    }
+    @Test
+    public void montanaTest() {
+        test("Montana", "MT");
+    }
+    @Test
+    public void nebraskaTest() {
+        test("Nebraska", "NE");
+    }
+    @Test
+    public void nevadaTest() {
+        test("Nevada", "NV");
+    }
     
     @Test
     public void emptyTest() {
